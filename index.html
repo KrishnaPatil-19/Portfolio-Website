@@ -1,0 +1,313 @@
+<!-- Current change being made is to add light mode to the website. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishna's Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/kfavicon.png" />
+    <script
+      src="https://kit.fontawesome.com/27b98cb3c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="assets/klogo.png" alt="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm Krishna Subhash Patil</h1>
+          <p>
+            I'm a student at SSBT's Arts, Commerece & Science college, Jalgaon.
+          </p>
+          <!--<h1>Hi, I'm <span>Krishna</span><br>Patil from India</h1>-->
+        </div>
+      </div>
+    </div>
+    <!-- --------about-------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/ksp.JPG" alt="Krishna Patil photo" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Throughout my academic journey, I have been actively engaged in learning programming languages, data structures, algorithms, and software development methodologies. I strive to constantly enhance my technical skills and stay up-to-date with the latest advancements in the field.
+                <br>        
+                As an aspiring SDE, I find joy in problem-solving and the creative process of designing efficient and user-friendly software solutions. I am driven by the opportunity to make a positive impact on people's lives through innovative technology.
+                <br>
+                In addition to my technical aptitude, I possess excellent analytical and critical thinking skills. I have participated in coding competitions and hackathons, where I have collaborated with diverse teams, honed my teamwork abilities, and developed innovative solutions to complex problems.
+                <br>
+                I am eager to gain practical experience and apply my knowledge through internships and projects that allow me to further refine my skills as a software developer. I am committed to continuous learning and growth, seeking opportunities to expand my horizons and contribute to the ever-evolving field of software development.
+                <br>
+                Ultimately, my goal is to become a skilled Software Development Engineer, leveraging my expertise to develop cutting-edge solutions that positively impact the world. I am excited to embark on this journey and connect with like-minded professionals who share my passion for innovation and technology.
+            </p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Hard Skills
+                </p>
+                <p class="tab-links active-link" onclick="opentab('soft-skills')">
+                    Soft Skills
+                  </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Hard Skills :</span></li>
+                <li><span>Web Development :</span><br />HTML<br>CSS<br>JavaScript</li>
+                <li><span>Programming languages :</span><br />C Language<br>C++<br>JavaScript</li>
+                <li><span>DBMS</span><br>MySQL<br>SQL</li>
+              </ul>
+            </div>
+            <div class="tab-contents active-tab" id="soft-skills">
+                <ul>
+                    <li><span>Soft Skills :</span></li>
+                  <li>Communication SKills<br>Problem-Solving<br>Critical Thinking<br>Time Management<br>Teamwork<br>Creativity<br>Continuous Learning<br>Emotional Intelligence</li>
+                </ul>
+              </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>June 2023 - Present</span><br />Software Development
+                  Intern at Renocrew Solutions.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022 - Present (2025 Expected)</span><br />BCA at SSBT's
+                  ACSC, Jalgaon.
+                </li>
+                <li>
+                    <span>2021 - 2022</span><br>12th State Board at SVKM (MJ) Jr college, Jalgaon.
+                </li>
+                <li>
+                    <span>2019 - 2020</span><br>10th State Board at OEMS (State Board) school, Jalgaon.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------services-------- -->
+    <!--<div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I specialize in crafting visually stunning and highly functional
+              websites that leave a lasting impression.
+            </p>
+            <a href="learnmore.html">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-android"></i>
+            <h2>App Design</h2>
+            <p>App development services coming soon.</p>
+            <a href="learnmore.html">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <!-- ------------portfolio----------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work calc">
+            <img src="assets/Calc1.png" alt="Calculator project image." />
+            <div class="layer">
+              <h3>
+                <a
+                  href="https://projectsbykrishnapatil.on.drv.tw/Krishna's%20Calculator/calc.html"
+                  title="Link to Calculator project website."
+                  target="_blank"
+                  >Calculator</a
+                >
+              </h3>
+              <p>
+                A simple calculator that performs basic arithmetic operations
+                with error handling capabilities and light/dark mode.
+              </p>
+              <a
+                href="https://github.com/KrishnaPatil-19/Calculator-project"
+                title="GitHub repository of Calculator project."
+                class="icon"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work port">
+            <img src="assets/portfolio_latest.png" alt="" />
+            <div class="layer">
+              <h3>
+                <a
+                  href="#"
+                  title="Link to portfolio website to be added soon."
+                  target="_blank"
+                  >Portfolio Website</a
+                >
+              </h3>
+              <p>Portfolio website showcasing my skills and achievements.</p>
+              <a
+                href="#"
+                title="GitHub repository link of Portfolio project to be added soon."
+                class="icon"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="work">
+                        <img src="assets/work-3.png" alt="">
+                    </div>-->
+        </div>
+        <a href="seemore.html" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ------------contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              <a href="mailto:krishnapatilcontact@gmail.com"
+                >krishnapatilcontact@gmail.com</a
+              >
+            </p>
+            <!--<p><i class="fa-solid fa-phone"></i> <a href="tel:1904200665">1904200665</a></p>-->
+            <div class="social-icons">
+              <a href="https://www.instagram.com/krishnapatil_06/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/krishna-patil-759269249/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/KrishnaPatil-19"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="assets/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message (optional)"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © & Made with
+          <i class="fa-solid fa-heart"></i> Krishna Patil.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      let sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzM0fXfuEh7GLGk136Lo0XfX-_CUkQaBZjCOq0iweBNYu5ppJE_EkzQf-WibDkjz3s-/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.style.opacity = 1; // Fade in the message
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.style.opacity = 0; // Fade out the message
+              setTimeout(function () {
+                msg.innerHTML = ""; // Clear the message
+              }, 500);
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
+
+<!-- Footnotes : -
+    A] Changes to be made : -
+    1. Add ability to switch between dark & light mode.
+    2. Change the red-pink color to appropriate shade of blue.
+    3. Add links to GitHub repositories of respective projects & links to projects website.
+    
+    B] After changes are made : -
+    1. Upload project files to GitHub.
+    2. Make a related post on LinkedIn. -->
+
+<!-- Current change being made is to add light mode to the website. -->
