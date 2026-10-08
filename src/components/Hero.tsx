@@ -6,6 +6,7 @@ export function Hero() {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
+  const imageSrc = `${import.meta.env.BASE_URL}images/KSP_photo.jpeg`;
 
   useEffect(() => {
     const typingSpeed = isDeleting ? 50 : 100;
@@ -84,10 +85,9 @@ export function Hero() {
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-[3rem] p-1 animate-halo bg-gradient-to-br from-primary via-transparent to-accent rotate-3 transition-transform hover:rotate-0 duration-500">
             <div className="w-full h-full rounded-[2.8rem] overflow-hidden bg-background relative z-10">
               <img 
-                src="/images/KSP_photo.jpeg" 
+                src={imageSrc} 
                 alt="Profile" 
-                onClick={() => alert("Kya dekh raha hai be? Handsome aadmi dekhega to dekhta hi rahega?!")}
-                className="w-full h-full object-cover mix-blend-luminosity opacity-80 hover:opacity-100 hover:mix-blend-normal transition-all duration-500 cursor-pointer"
+                className="w-full h-full object-cover mix-blend-luminosity opacity-80 hover:opacity-100 hover:mix-blend-normal transition-all duration-500"
               />
             </div>
           </div>
